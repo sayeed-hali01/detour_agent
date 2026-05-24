@@ -6,11 +6,11 @@ async def test_detour_planning():
     print("=== Detour Backend Local Verification ===")
     
     # Define test parameters
-    origin = "San Francisco, CA"
-    destination = "Los Angeles, CA"
+    origin = "Bangalore"
+    destination = "Goa"
     categories = ["cafe", "scenic_lookout"]
     max_detour_minutes = 30.0
-    user_preferences = "I want nice views of the ocean, historic places, and delicious coffee."
+    user_preferences = "I want nice scenic views of the ghats, historic temples/churches, and traditional filter coffee."
     
     print(f"Planning route from: {origin}")
     print(f"To: {destination}")

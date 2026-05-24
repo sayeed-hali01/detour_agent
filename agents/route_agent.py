@@ -7,16 +7,22 @@ from utils.polyline_utils import haversine_distance
 
 # Mock coordinates database for fallback testing
 CITY_COORDS = {
-    "san francisco": (37.7749, -122.4194),
-    "sf": (37.7749, -122.4194),
-    "los angeles": (34.0522, -118.2437),
-    "la": (34.0522, -118.2437),
-    "seattle": (47.6062, -122.3321),
-    "las vegas": (36.1716, -115.1398),
-    "san diego": (32.7157, -117.1611),
-    "portland": (45.5152, -122.6784),
-    "phoenix": (33.4484, -112.0740),
-    "san jose": (37.3382, -121.8863),
+    "bangalore": (12.9716, 77.5946),
+    "bengaluru": (12.9716, 77.5946),
+    "goa": (15.2993, 74.1240),
+    "panaji": (15.4909, 73.8278),
+    "panjim": (15.4909, 73.8278),
+    "tumakuru": (13.3379, 77.1173),
+    "tumkur": (13.3379, 77.1173),
+    "chitradurga": (14.2251, 76.4000),
+    "davanagere": (14.4644, 75.9218),
+    "hubli": (15.3647, 75.1240),
+    "hubballi": (15.3647, 75.1240),
+    "dharwad": (15.4589, 75.0078),
+    "ponda": (15.4005, 74.0040),
+    "belagavi": (15.8497, 74.4977),
+    "belgaum": (15.8497, 74.4977),
+    "karwar": (14.8085, 74.1300),
 }
 
 def _resolve_coordinate(address: str) -> tuple[float, float]:
@@ -34,8 +40,8 @@ def _resolve_coordinate(address: str) -> tuple[float, float]:
     except ValueError:
         pass
         
-    # Default to SF coordinates
-    return (37.7749, -122.4194)
+    # Default to Bangalore coordinates
+    return (12.9716, 77.5946)
 
 def _generate_mock_route(origin: str, destination: str) -> dict:
     """Generates mock route info when Google API Key is unavailable."""

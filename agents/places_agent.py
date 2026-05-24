@@ -6,32 +6,32 @@ from google.antigravity import LocalAgentConfig
 # Mock data for generating realistic POIs based on categories
 MOCK_PLACES_POOL = {
     "cafe": [
-        "Coastal Coffee House", "Redwood Roast Espresso", "Summit View Cafe",
-        "Wayside Roasters", "The Daily Grind", "Highway Espresso Bar"
+        "Kamath Lokaruchi Filter Coffee", "Cafe Coffee Day - Highway Oasis", "Malgudi Filter Coffee",
+        "Chitradurga Highway Chai Tapri", "Goan Brew Cafe", "Halli Mane Cafe"
     ],
     "coffee": [
-        "Coastal Coffee House", "Redwood Roast Espresso", "Summit View Cafe",
-        "Wayside Roasters", "The Daily Grind", "Highway Espresso Bar"
+        "Kamath Lokaruchi Filter Coffee", "Cafe Coffee Day - Highway Oasis", "Malgudi Filter Coffee",
+        "Chitradurga Highway Chai Tapri", "Goan Brew Cafe", "Halli Mane Cafe"
     ],
     "restaurant": [
-        "Pacific Coast Grill", "The Scenic Diner", "Mountain Ridge Steakhouse",
-        "Valley Vineyards Bistro", "Roadside Burger Joint", "Forest Canopy Kitchen"
+        "Sri Krishna Bhavan (Tumkur)", "Hotel Dhruv Vegetarian", "Preethi Canteen (Davanagere)",
+        "Ravi Fish Land", "Mum's Kitchen (Goa)", "Martins Corner", "The Fisherman's Wharf"
     ],
     "scenic_lookout": [
-        "Ocean Vista Point", "Sunset Peak Overlook", "Valley Canopy Observation Deck",
-        "Golden Gate Ridge Lookout", "Pacific Horizons Vista", "Pine Crest Ridge View"
+        "Chitradurga Fort View Point", "Western Ghats Misty Pass", "Anmod Ghat Valley Overlook",
+        "Dudhsagar Waterfall Viewpoint", "Mollem Forest Canopy Vista", "Chorla Ghat Mist View"
     ],
     "tourist_attraction": [
-        "Historic Coastal Lighthouse", "Mystery Redwood Forest Path", "Pioneer Pioneer Memorial",
-        "Old Mill Historic Site", "Grizzly Peak State Reserve", "Whispering Falls Park"
+        "Historic Chitradurga Fort", "Dandeli Wildlife Reserve", "Tambdi Surla Mahadev Temple",
+        "Basilica of Bom Jesus", "Mangueshi Temple", "Aguada Fort"
     ],
     "park": [
-        "Redwood Valley State Park", "Ocean Shoreline Reserve", "Meadowcreek Park",
-        "Sentinel Peak Trailhead", "Sunny Pines Campground", "Canyon Creek Meadows"
+        "Anshi National Park", "Bhagwan Mahaveer Sanctuary", "Mollem National Park",
+        "Cotigao Wildlife Sanctuary", "Kubbalkatte Deer Park"
     ],
     "gas_station": [
-        "Highway Shell & Shop", "Chevron Express Way", "Roadside Travel Plaza",
-        "EcoFuel Charging & Fuel"
+        "Indian Oil Fuel Plaza (Chitradurga)", "Bharat Petroleum Highway Oasis", "HP Fuel Stop & Cafe (Hubli)",
+        "Goa Boundary Shell Station"
     ]
 }
 
