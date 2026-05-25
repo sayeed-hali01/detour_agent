@@ -1,7 +1,6 @@
 import os
 import random
 import httpx
-from google.antigravity import LocalAgentConfig
 
 # Mock data for generating realistic POIs based on categories
 MOCK_PLACES_POOL = {
