@@ -1,12 +1,10 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
-
 from orchestrator.root_agent import run_orchestration
 
 app = FastAPI(
