@@ -2,7 +2,6 @@ import os
 import math
 import httpx
 import polyline
-from google.antigravity import LocalAgentConfig
 from utils.polyline_utils import haversine_distance
 
 # Mock coordinates database for fallback testing
