@@ -55,7 +55,14 @@ def _generate_mock_ranking(candidates, user_preferences, max_detour_mins):
 async def rank_candidates(candidates, user_preferences, max_detour_mins):
     if not candidates:
         return {"ranked_detours": []}
-    return _generate_mock_ranking(candidates, user_preferences, max_detour_mins)
+        
+    # Heuristic fallback if API key is missing
+    if not os.getenv("GEMINI_API_KEY"):
+        print("Orchestrator [Ranking Agent]: GEMINI_API_KEY is missing. Falling back to Heuristic Ranker.")
+        return _generate_mock_ranking(candidates, user_preferences, max_detour_mins)
+        
+    config = get_ranking_agent_config()
+    
     prompt = f"""
 Evaluate and rank the following candidate places based on the user preferences.
 User Preferences: "{user_preferences}"
