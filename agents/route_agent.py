@@ -101,7 +101,8 @@ async def get_route(origin: str, destination: str) -> dict:
         - is_mock: Boolean status
     """
     api_key = os.getenv("GOOGLE_MAPS_API_KEY")
-    if not api_key:
+    use_mock = os.getenv("USE_MOCK_DATA", "false").lower() == "true"
+    if not api_key or use_mock:
         return _generate_mock_route(origin, destination)
         
     url = "https://maps.googleapis.com/maps/api/directions/json"

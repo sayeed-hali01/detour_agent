@@ -99,7 +99,8 @@ async def search_places_near_coordinate(latitude: float, longitude: float, categ
         - is_mock: Boolean status
     """
     api_key = os.getenv("GOOGLE_MAPS_API_KEY")
-    if not api_key:
+    use_mock = os.getenv("USE_MOCK_DATA", "false").lower() == "true"
+    if not api_key or use_mock:
         return _generate_mock_places(latitude, longitude, category)
         
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
